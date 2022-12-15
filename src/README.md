@@ -1,4 +1,4 @@
-  <img src='./src/assets/image/logo.png'>  
+  <img src='../src/assets/image/logo.png'>  
   
 ## Projet 14 - Wealth Health - HRNet - OpenClassrooms
 
@@ -13,13 +13,18 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - React: (v 18.2.0)
 - React-dom: (v 18.2.0)
 - React-router-dom: (v 6.3.0)
+- jsdoc: (v 3.6.11)
+- redux: (v 4.2.0)
+- redux/toolkit: (v 1.8.5)
 - react-fontawesome: (v 0.2.0)
 - date-fns: (v 2.29.2)
+- modal_mm: (v 0.1.12)
 - moment: (v 2.29.4)
 - react-select: (v 5.4.0)
 - react-table: (v 7.8.0)
 
 ---
+
 
 ### Project goal
 
@@ -41,49 +46,6 @@ Wealth Health is a a large financial company.This company uses an internal web a
 
 ---
 
-### Performance testing
-
-To measure quantifiable data (e.g. page load times, network calls) to ensure that converting the app to React actually improves performance comparing to JQuery page, we will use [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.) from Chrome.
-
----
-
-### My plugin React.
-
-I have chosen the modal plugin. You can see all the instructions [here](https://www.npmjs.com/package/modal_mm) to install my plugin.
-Here some examples of my modal.
-<img src='./src/assets/image/modalexamples.png'>
-
----
-
-### How to work with Wealth Realth-HRNet React project
-
-- Clone this reposity:
-
-```
-git clone https://github.com/MarcosMene/MarcosMeneghetti_14_17082022.git
-```
-
-- Change the directory to:
-
-```
-cd MarcosMeneghetti_14_17082022
-```
-
-- Install dependencies:
-
-```
-npm install
-```
-
-5 - Start the application:
-
-```
-npm start
-```
-
-The application will be rendered at URL `http://localhost:3000`
-
----
 
 ### Build version of React project
 

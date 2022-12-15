@@ -1,0 +1,23 @@
+import React from "react";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import CreateEmployee from "../Pages/createEmployee/CreateEmployee";
+import Page404 from "../Pages/Error/Page404";
+
+
+function RoutesPath() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <section className="elementsToDisplay">
+      <Routes>
+        <Route path="/" element={<CreateEmployee />} />
+        <Route path="*" element={<Page404 />} />
+      </Routes>
+      </section>
+      <Footer />
+    </BrowserRouter>
+  );
+}
+export default RoutesPath;
