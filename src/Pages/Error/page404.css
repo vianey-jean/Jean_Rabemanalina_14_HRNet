@@ -38,6 +38,7 @@
 .hero-not-found-content .title {
     font-weight: bold;
     font-size: 1.8rem;
+    color:red;
     margin: 0
 }
 
@@ -51,7 +52,7 @@
 .hero-not-found-link {
     text-decoration: none;
     font-weight: bold;
-    color: #596e0f;
+    color: red;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     font-size: 1.2rem;
@@ -100,7 +101,8 @@
     }
 
     .hero-not-found .hero-not-found-content .title {
-        font-size: 1.2rem
+        font-size: 1.2rem;
+        color:red;
     }
 
     .hero-not-found .hero-not-found-content .text {
