@@ -5,7 +5,7 @@ import logo from "../../assets/image/logo.png";
 
 
 const Header = () => {
-  const navLinkStyles = ({ isActive }) => {
+  const navStyles = ({ isActive }) => {
     return {
       textDecoration: isActive ? "underline" : "none",
       textUnderlineOffset: "5px",
@@ -25,10 +25,10 @@ const Header = () => {
           </NavLink>
           <h2 className="header-tm"> HRnet</h2>
           <div className="header-links">
-            <NavLink to="/" style={navLinkStyles}>
+            <NavLink to="/" style={navStyles}>
               Create Employee
             </NavLink>
-            <NavLink to="/list" style={navLinkStyles}>
+            <NavLink to="/list" style={navStyles}>
               List Employee
             </NavLink>
           </div>

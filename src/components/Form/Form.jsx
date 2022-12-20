@@ -1,9 +1,12 @@
+//import { useState, useEffect} from "react"
+
 import DatePicker from "react-datepicker";
 import moment from "moment";
 import "./form.css";
 import "../../../src/App.css";
 import "react-datepicker/dist/react-datepicker.css";
 import Select from "react-select";
+import {states} from "../../Moks/states";
 
 
 
@@ -92,6 +95,7 @@ const Form = () => {
                 <Select
                   id="countrystate"
                   name="countrystate"
+                  options={states}
                   placeholder="Select state"
                 />
               </label>

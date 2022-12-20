@@ -10,11 +10,10 @@ const NotFound = () => {
     <main>
       <div className="hero-not-found">
         <section className="hero-not-found-content">
-          <h2 className="sr-only">Something's wrong here!</h2>
-          <p className="title">Something's wrong here!</p>
+          <h2 className="title">Quelque chose ne va pas ici!</h2>
           <p className="text">
-            The page you are looking for might have been removed or temporarily
-            unavailable.
+          La page que vous recherchez a peut-être été supprimée ou temporairement
+            indisponible.
           </p>
           <div>
             <button

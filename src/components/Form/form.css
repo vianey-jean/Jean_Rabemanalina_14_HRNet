@@ -118,9 +118,9 @@
 
 .form-wrapper .form-inputs input:focus {
     outline: none;
-    border-color: #596e0d;
-    -webkit-box-shadow: 0 0 10px rgba(89, 110, 13, .6);
-    box-shadow: 0 0 10px rgba(89, 110, 13, .6)
+    border-color: #001877;
+    -webkit-box-shadow: 0 0 10px rgba(0, 2, 112, 0.6);
+    box-shadow: 0 0 10px rgba(0, 2, 112, 0.6)
 }
 
 .form-wrapper .form-inputs select option {
