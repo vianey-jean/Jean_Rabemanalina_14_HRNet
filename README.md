@@ -13,7 +13,6 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - React: (v 18.2.0)
 - React-dom: (v 18.2.0)
 - React-router-dom: (v 6.5.0)
-- react-fontawesome: (v 0.2.0)
 - date-fns: (v 2.29.3)
 - moment: (v 2.29.4)
 - react-select: (v 5.7.0)
