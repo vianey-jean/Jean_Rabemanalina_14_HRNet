@@ -6,13 +6,17 @@ import "./form.css";
 import "../../../src/App.css";
 import "react-datepicker/dist/react-datepicker.css";
 import Select from "react-select";
-import {states} from "../../Moks/states";
+import {listesStates} from "../../Moks/states";
+import {listesDepartement} from "../../Moks/departements";
 
 
 
 const Form = () => {
   //to get the size of the total employee inside array
 
+  //console.log(listesStates);
+  //console.log(listesDepartement);
+  
   return (
     <>
 
@@ -95,7 +99,8 @@ const Form = () => {
                 <Select
                   id="countrystate"
                   name="countrystate"
-                  options={states}
+                  options={listesStates}
+                  
                   placeholder="Select state"
                 />
               </label>
@@ -115,6 +120,7 @@ const Form = () => {
                 <Select
                   id="departament"
                   name="departament"
+                  options={listesDepartement}
                   placeholder="Select departament"
                 />
               </label>

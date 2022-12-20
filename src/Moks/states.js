@@ -1,4 +1,4 @@
-export const states = [
+export const listesStates = [
     {
       name: "countrystate",
       label: "Alabama",
