@@ -38,7 +38,7 @@ const listeTable=() =>{
                         Previous
                     </button>
                     <button >
-                        Previous
+                        Next
                     </button>
                     <button >
                         {">>"}
