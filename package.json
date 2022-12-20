@@ -1,6 +1,7 @@
 {
   "name": "jean-rabemanalina-14-hrnet",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "author": "Jean marie Vianey RABEMANALINA",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
