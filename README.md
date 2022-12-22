@@ -17,6 +17,10 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - moment: (v 2.29.4)
 - react-select: (v 5.7.0)
 - react-table: (v 7.8.0)
+- @reduxjs/toolkit: (1.9.1)
+- react-datepicker: (4.8.0)
+- react-redux: (8.0.5)
+- redux: (4.2.0)
 
 ---
 
