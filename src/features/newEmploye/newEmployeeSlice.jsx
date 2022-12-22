@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import MOCK_DATA from "../../Moks/MOCK_DATA.json";
+import MOCK from "../../Moks/MOCK.json";
 
 //start array employee array with mock data
 const initialState = {
-  arrayEmployee: [...MOCK_DATA],
+  arrayEmployee: [...MOCK],
 };
 
 export const newEmployeeSlice = createSlice({

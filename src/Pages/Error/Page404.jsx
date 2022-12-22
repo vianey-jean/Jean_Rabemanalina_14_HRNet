@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./page404.css";
 
-
 const NotFound = () => {
   const navigate = useNavigate();
 
@@ -12,8 +11,8 @@ const NotFound = () => {
         <section className="hero-not-found-content">
           <h2 className="title">Quelque chose ne va pas ici!</h2>
           <p className="text">
-          La page que vous recherchez a peut-être été supprimée ou temporairement
-            indisponible.
+            La page que vous recherchez a peut-être été supprimée ou
+            temporairement indisponible.
           </p>
           <div>
             <button

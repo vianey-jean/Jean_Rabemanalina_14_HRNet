@@ -1,7 +1,6 @@
 import Form from "../../components/Form/Form";
 import "./CreateEmployee.css";
 
-
 const CreateEmployee = () => {
   return (
     <main className="container center">

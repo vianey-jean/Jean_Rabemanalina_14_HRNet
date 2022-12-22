@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/image/logo.png";
 
-
-
 const Header = () => {
   const navStyles = ({ isActive }) => {
     return {

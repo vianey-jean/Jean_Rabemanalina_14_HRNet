@@ -11,12 +11,6 @@ import Select from "react-select";
 import { listesStates } from "../../Moks/states";
 import { listesDepartement } from "../../Moks/departements";
 
-/**
- * @name Form
- * @description create form component for employee creation page
- * @returns {JSX.Element}
- */
-
 const Form = () => {
   //to get the size of the total employee inside array
   const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
@@ -40,8 +34,6 @@ const Form = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
-
-
 
   // React state to manage selected options country state
   const [selectedOptionsState, setSelectedOptionsState] = useState();
@@ -107,8 +99,6 @@ const Form = () => {
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-   
-
       //add 1 to form id to put inside the table
       formValues.id = totalEmployee.length + 1;
 
@@ -196,7 +186,7 @@ const Form = () => {
 
   return (
     <>
-     <div className="form-wrapper">
+      <div className="form-wrapper">
         <form className="form-inputs" onSubmit={handleSubmit}>
           <div className="form-fieldsets">
             <fieldset className="form-fieldset">
