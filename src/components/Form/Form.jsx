@@ -35,6 +35,12 @@ const Form = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
+  //Modal
+  //const [showModal, setShowModal] = useState(false);
+  //const openModal = () =>{
+  //setShowModal((prev) => !prev);
+  //};
+
   // React state to manage selected options country state
   const [selectedOptionsState, setSelectedOptionsState] = useState();
 
@@ -186,6 +192,31 @@ const Form = () => {
 
   return (
     <>
+
+      {/**
+       * Insertion du modal.
+       * 
+       * {Object.keys(formErrors).length === 0 && isSubmit && (
+        <Modal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          //your custom parameters here
+          backgroundColor="white"
+          colorModal="beige"
+          iconModal="success"
+          borderModal="20px"
+          content="Employee created!"
+          contentcolor="black"
+          shadowModal="0 5px 12px rgba(18, 39, 3, .5)"
+          fontSizeModal="1.5rem"
+          //your custom parameters
+        />
+      )}
+      *
+       */}
+
+
+
       <div className="form-wrapper">
         <form className="form-inputs" onSubmit={handleSubmit}>
           <div className="form-fieldsets">
