@@ -78,7 +78,7 @@ const listeTable = () => {
           >
             {[10, 25, 50, 100].map((pageSize) => (
               <option key={pageSize} value={pageSize}>
-                Montrer {pageSize}
+                Show {pageSize} / Pages
               </option>
             ))}
           </select>
