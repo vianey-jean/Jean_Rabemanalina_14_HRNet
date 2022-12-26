@@ -47,7 +47,7 @@ const listeTable = () => {
     pageCount,
     setPageSize,
     state,
-    setGlobaleFilter,
+    setGlobalFilter,
     prepareRow,
     // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useTable(
@@ -63,22 +63,22 @@ const listeTable = () => {
     usePagination
   );
 
-  const { pageIndex, PageSize } = state;
-  const { globaleFilter } = state;
+  const { pageIndex, pageSize } = state;
+  const { globalFilter } = state;
   // console.log(columns)
 
   return (
     <div className="searches">
       <div className="search-and-pagination">
         <div className="search">
-          <GlobalFilter filter={globaleFilter} setFilter={setGlobaleFilter} />
+          <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
           <select
-            value={PageSize}
+            value={pageSize}
             onChange={(e) => setPageSize(Number(e.target.value))}
           >
-            {[10, 25, 50, 100].map((PageSize) => (
-              <option key={PageSize} value={PageSize}>
-                Montrer {PageSize}
+            {[10, 25, 50, 100].map((pageSize) => (
+              <option key={pageSize} value={pageSize}>
+                Montrer {pageSize}
               </option>
             ))}
           </select>
@@ -86,26 +86,26 @@ const listeTable = () => {
         <div className="pagination">
           <div className="pagination-page">
             <span>
-              Page {" "}
+              Page{" "}
               <strong>
-                {pageIndex +1} of {pageOptions.length}
+                {pageIndex + 1} of {pageOptions.length}
               </strong>{" "}
             </span>
 
             <span>
               <label htmlFor="goto">Go to page: </label>
-              <input 
-              id = "goto"
-              type="number"
-              min="1"
-              defaultValue={pageIndex +1}
-              onChange={(e) => {
-                const pageNumber = e.target.value
-                ? Number(e.target.value) -1
-                : 0;
-                gotoPage(pageNumber);
-              }}
-              style={ {width: "50px"}}
+              <input
+                id="goto"
+                type="number"
+                min="1"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+                style={{ width: "50px" }}
               />
             </span>
           </div>
@@ -130,12 +130,15 @@ const listeTable = () => {
       </div>
 
       <div className="table-group">
-        <table>
+        <table {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup, index) => (
-              <tr>
+              <tr key={index} {...headerGroup.getHeaderGroupProps()}>
                 {headerGroup.headers.map((column, index) => (
-                  <th>
+                  <th
+                    key={index}
+                    {...column.getHeaderProps(column.getSortByToggleProps())}
+                  >
                     {column.render("Header")}
                     <span>
                       {column.isSorted ? (
@@ -154,10 +157,21 @@ const listeTable = () => {
             ))}
           </thead>
 
-          <tbody>
-            <tr>
-              <td></td>
-            </tr>
+          <tbody {...getTableBodyProps()}>
+            {page.map((row, index) => {
+              prepareRow(row);
+              return (
+                <tr key={index} {...row.getRowProps()}>
+                  {row.cells.map((cell, index) => {
+                    return (
+                      <td key={index} {...cell.getCellProps()}>
+                        {cell.render("Cell")}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
         {!Employees.length && (
