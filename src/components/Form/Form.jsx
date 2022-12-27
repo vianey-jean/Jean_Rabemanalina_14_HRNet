@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
+//import { Modal } from "modal_mm";
 import moment from "moment";
 import "./form.css";
 import "../../../src/App.css";
@@ -36,10 +37,10 @@ const Form = () => {
   const [isSubmit, setIsSubmit] = useState(false);
 
   //Modal
-  //const [showModal, setShowModal] = useState(false);
-  //const openModal = () =>{
-  //setShowModal((prev) => !prev);
-  //};
+  // const [showModal, setShowModal] = useState(false);
+  // const openModal = () =>{
+  // setShowModal((prev) => !prev);
+  // };
 
   // React state to manage selected options country state
   const [selectedOptionsState, setSelectedOptionsState] = useState();
@@ -105,6 +106,7 @@ const Form = () => {
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
+      //openModal();
       //add 1 to form id to put inside the table
       formValues.id = totalEmployee.length + 1;
 
@@ -193,7 +195,7 @@ const Form = () => {
   return (
     <>
 
-      {/**
+      {/* *
        * Insertion du modal.
        * 
        * {Object.keys(formErrors).length === 0 && isSubmit && (
@@ -212,8 +214,8 @@ const Form = () => {
           //your custom parameters
         />
       )}
-      *
-       */}
+      * */}
+      
 
 
 
