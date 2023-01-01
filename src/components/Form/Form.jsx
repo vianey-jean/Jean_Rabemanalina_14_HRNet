@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
-//import { Modal } from "modal_mm";
+//import { Modal } from "modal_rjmv";
 import moment from "moment";
 import "./form.css";
 import "../../../src/App.css";

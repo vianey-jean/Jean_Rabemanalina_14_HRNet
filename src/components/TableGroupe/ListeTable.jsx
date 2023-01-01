@@ -148,7 +148,7 @@ const listeTable = () => {
                           <img src={versHaut} alt="down list" />
                         )
                       ) : (
-                        ""
+                        "  ▲▼  "
                       )}
                     </span>
                   </th>
