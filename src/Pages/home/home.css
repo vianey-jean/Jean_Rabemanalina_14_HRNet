@@ -13,6 +13,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 30px;
+  margin-bottom: 150px;
 }
 
 .container.center .form-title {
