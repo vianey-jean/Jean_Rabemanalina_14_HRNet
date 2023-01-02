@@ -1,6 +1,5 @@
 /*eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
@@ -342,9 +341,7 @@ const Form = () => {
               <span className="errorMessage">{formErrors.departament}</span>
             </fieldset>
           </div>
-          <NavLink to="/list">
-            <button className="form-button">Save</button>
-          </NavLink>
+          <button className="form-button">Save</button>
         </form>
       </div>
     </>
