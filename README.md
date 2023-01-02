@@ -21,7 +21,7 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - react-datepicker: (4.8.0)
 - react-redux: (8.0.5)
 - redux: (4.2.0)
-- modal_rjmv: "^0.2.0"
+- modal_rjmv: "^0.2.2"
 
 ---
 

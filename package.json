@@ -1,6 +1,6 @@
 {
   "name": "jean-rabemanalina-14-hrnet",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "author": "Jean marie Vianey RABEMANALINA",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "date-fns": "^2.29.3",
-    "modal_rjmv": "^0.2.0",
+    "modal_rjmv": "^0.2.2",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
