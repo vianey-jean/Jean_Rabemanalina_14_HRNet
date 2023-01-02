@@ -204,7 +204,7 @@ const Form = () => {
           iconModal="success"
           borderModal="20px"
           content="Employee created !"
-          contentcolor=" #461632  "
+          contentcolor=" #461632 "
           shadowModal="0 5px 12px rgba(18, 39, 3, .5)"
           fontSizeModal="1.5rem"
         //your custom parameters
@@ -245,9 +245,14 @@ const Form = () => {
                 onChange={ageDate}
                 selected={selectedDate}
                 placeholderText={"dd/mm/yyyy"}
+
+                //Si on veux que l'employée soitent moins 60ans
                 yearDropdownItemNumber={60}
                 minDate={moment().subtract(60, "years")._d}
+
+                // si on veux que les employées soitent plus de 18 ans
                 maxDate={moment().subtract(18, "years")._d}
+
                 scrollableYearDropdown
                 dateFormat="dd/MM/yyyy"
                 peekNextMonth
