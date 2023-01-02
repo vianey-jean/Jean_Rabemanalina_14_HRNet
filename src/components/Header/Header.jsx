@@ -23,7 +23,7 @@ const Header = () => {
           </NavLink>
           <h2 className="header-tm"> HRnet</h2>
           <div className="header-links">
-            <NavLink to="/" style={navStyles}>
+            <NavLink to="/create" style={navStyles}>
               Create Employee
             </NavLink>
             <NavLink to="/list" style={navStyles}>
