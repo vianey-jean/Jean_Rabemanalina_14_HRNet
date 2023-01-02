@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
-import {Modal} from "modal_rjmv";
+import { Modal } from "modal_rjmv";
 import moment from "moment";
 import "./form.css";
 import "../../../src/App.css";
@@ -38,8 +38,8 @@ const Form = () => {
 
   //Modal
   const [showModal, setShowModal] = useState(false);
-  const openModal = () =>{
-  setShowModal((prev) => !prev);
+  const openModal = () => {
+    setShowModal((prev) => !prev);
   };
 
   // React state to manage selected options country state
@@ -194,31 +194,22 @@ const Form = () => {
 
   return (
     <>
-
-      
-       * Insertion du modal.
-       * 
-       * {Object.keys(formErrors).length === 0 && isSubmit && (
+      {Object.keys(formErrors).length === 0 && isSubmit && (
         <Modal
           showModal={showModal}
           setShowModal={setShowModal}
           //your custom parameters here
           backgroundColor="white"
-          colorModal="beige"
+          colorModal="#dcf5ed"
           iconModal="success"
           borderModal="20px"
-          content="Employee created!"
-          contentcolor="black"
+          content="Employee created !"
+          contentcolor=" #581845 "
           shadowModal="0 5px 12px rgba(18, 39, 3, .5)"
           fontSizeModal="1.5rem"
-          //your custom parameters
+        //your custom parameters
         />
       )}
-      
-      
-
-
-
       <div className="form-wrapper">
         <form className="form-inputs" onSubmit={handleSubmit}>
           <div className="form-fieldsets">
