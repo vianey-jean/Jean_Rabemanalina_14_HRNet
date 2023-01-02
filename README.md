@@ -63,7 +63,7 @@ git clone https://github.com/vianey-jean/Jean_Rabemanalina_14_HRNet.git
 - Change the directory to:
 
 ```
-cd MarcosMeneghetti_14_17082022
+cd cd Jean_Rabemanalina_14_HRNet
 ```
 
 - Install dependencies:
