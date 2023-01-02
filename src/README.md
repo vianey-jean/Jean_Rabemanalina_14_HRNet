@@ -4,7 +4,7 @@
 
 Wealth Health is a a large financial company.This company uses an internal web application, called HRnet, which manages employee registration.
 
-##### Project realized by Marcos Meneghetti
+##### Project realized by Jean Marie Vianey RABEMANALINA
 
 ---
 
