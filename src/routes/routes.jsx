@@ -13,7 +13,7 @@ function RoutePath() {
       <Header />
       <section className="elementsToDisplay">
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/create" element={<CreateEmployee />} />
           <Route path="/list" element={<ListeEmployee />} />
           <Route path="*" element={<Page404 />} />
