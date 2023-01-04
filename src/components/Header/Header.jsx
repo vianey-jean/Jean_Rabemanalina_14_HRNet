@@ -2,6 +2,14 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/image/logo.png";
 
+
+/**
+ * @name Header
+ * @description create header component with a logo and 2 links to navigate to create employee form page and employee list page
+ * @returns {JSX.Element}
+ *
+ */
+
 const Header = () => {
   const navStyles = ({ isActive }) => {
     return {

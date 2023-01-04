@@ -2,6 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./page404.css";
 
+/**
+ * @name NotFound
+ * @description create a page 404 if a url not found.
+ * @return {JSX.Element}
+ */
+
 const NotFound = () => {
   const navigate = useNavigate();
 

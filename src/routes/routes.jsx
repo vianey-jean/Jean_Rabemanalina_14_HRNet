@@ -7,6 +7,12 @@ import ListeEmployee from "../Pages/listeEmployee/listeEmployee";
 import Page404 from "../Pages/Error/Page404";
 import Home from "../Pages/home/home"
 
+/**
+ * Dom injector and creation of router
+ * @return routes
+ */
+
+
 function RoutePath() {
   return (
     <BrowserRouter>

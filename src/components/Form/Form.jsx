@@ -12,9 +12,16 @@ import Select from "react-select";
 import { listesStates } from "../../Moks/states";
 import { listesDepartement } from "../../Moks/departements";
 
+/**
+ * @name Form
+ * @description create form component for employee creation page
+ * @returns {JSX.Element}
+ */
+
+
 const Form = () => {
   //to get the size of the total employee inside array
-  const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
+  //const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
 
   const dispatch = useDispatch();
 

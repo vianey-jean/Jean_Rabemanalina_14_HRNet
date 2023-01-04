@@ -17,11 +17,17 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - moment: (v 2.29.4)
 - react-select: (v 5.7.0)
 - react-table: (v 7.8.0)
-- @reduxjs/toolkit: (1.9.1)
-- react-datepicker: (4.8.0)
-- react-redux: (8.0.5)
-- redux: (4.2.0)
-- modal_rjmv: "^0.2.3"
+- @reduxjs/toolkit: (v 1.9.1)
+- react-datepicker: (v 4.8.0)
+- react-redux: (v 8.0.5)
+- redux: (v 4.2.0)
+- modal_rjmv: (v 0.2.3)
+
+---
+
+### I have used
+
+![Language - JS](https://img.shields.io/static/v1?label=Language&message=JS&color=red&style=for-the-badge&logo=javascript) ![Framework - React](https://img.shields.io/static/v1?label=Framework&message=React&color=green&style=for-the-badge&logo=react) ![Code Editor - VS Studio Code](https://img.shields.io/static/v1?label=Code+Editor&message=VS+Studio+Code&color=yellow&style=for-the-badge&logo=Visual+Studio+Code) ![Node - V18.12.1](https://img.shields.io/static/v1?label=Node&message=V16.15.0&color=brown&style=for-the-badge&logo=Node) ![API documentation - JSDoc](https://img.shields.io/static/v1?label=API+documentation&message=JSDoc&color=pink&style=for-the-badge)
 
 ---
 
@@ -44,6 +50,13 @@ Wealth Health is a a large financial company.This company uses an internal web a
 - [Plugin for data tables](https://github.com/DataTables/DataTables)
 
 ---
+
+### Performance testing
+
+To measure quantifiable data (e.g. page load times, network calls) to ensure that converting the app to React actually improves performance comparing to JQuery page, we will use [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.) from Chrome.
+
+---
+
 ### My plugin React.
 
 I have chosen the modal plugin. You can see all the instructions [here](https://www.npmjs.com/package/modal_rjmv) to install my plugin.
