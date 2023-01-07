@@ -29,4 +29,5 @@ describe('Create page form', () => {
     fireEvent.change(zipCode, { target: { value: '35' } });
     expect(zipCode).toBeValid();
   });
-});
+})
+;
