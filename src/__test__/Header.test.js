@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
-import render from '../../setupTests';
-import Header from './Header';
+import render from '../setupTests';
+import Header from '../components/Header/Header';
 
 const setup = () => render(<Header />);
 

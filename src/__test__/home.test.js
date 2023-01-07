@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
-import render from '../../setupTests';
-import Home from './home';
+import render from '../setupTests';
+import Home from '../Pages/home/home';
 
 const setup = () => render(<Home />);
 

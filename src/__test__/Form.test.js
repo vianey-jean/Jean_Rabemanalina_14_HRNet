@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom';
 import { screen, fireEvent } from '@testing-library/react';
-import render from '../../setupTests';
-import Create from './Form';
+import render from '../setupTests';
+import Form from '../components/Form/Form';
 
 
-const setup = () => render(<Create />);
+const setup = () => render(<Form />);
 
 describe('Create page form', () => {
 

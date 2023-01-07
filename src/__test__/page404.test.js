@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
-import render from '../../setupTests';
-import NotFound from './Page404';
+import render from '../setupTests';
+import NotFound from '../Pages/Error/Page404';
 
 const setup = () => render(<NotFound />);
 
