@@ -11,7 +11,7 @@
     "date-fns": "^2.29.3",
     "docdash": "^2.0.0",
     "jsdoc": "^4.0.0",
-    "modal_rjmv": "^0.2.3",
+    "modal_rjmv": "^0.3.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
