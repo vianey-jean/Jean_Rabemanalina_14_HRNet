@@ -21,7 +21,7 @@ import { listesDepartement } from "../../Moks/departements";
 
 const Form = () => {
   //to get the size of the total employee inside array
-  const totalEmployee = useSelector((state) => state.newEmployee);
+  const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
 
   const dispatch = useDispatch();
 
