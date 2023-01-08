@@ -1,12 +1,12 @@
 import { format } from "date-fns";
 
 export const COLUMNS = [
-  {
+  /* {
     Header: "Id",
     accessor: "id",
     disableFilters: true, //disable filter for id
     sticky: "left",
-  },
+  }, */
   {
     Header: "First Name",
     accessor: "firstname",

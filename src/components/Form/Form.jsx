@@ -1,7 +1,7 @@
 /*eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
+import { addEmployee} from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
 import { Modal } from "modal_rjmv";
 import moment from "moment";
@@ -21,13 +21,13 @@ import { listesDepartement } from "../../Moks/departements";
 
 const Form = () => {
   //to get the size of the total employee inside array
-  const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
+  const totalEmployee = useSelector((state) => state.newEmployee);
 
   const dispatch = useDispatch();
 
   const initialValues = {
-    id: "",
     firstname: "",
+    id:"",
     lastname: "",
     datebirth: "",
     startdate: "",
