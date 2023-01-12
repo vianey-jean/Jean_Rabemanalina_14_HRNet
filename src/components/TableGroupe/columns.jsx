@@ -1,5 +1,11 @@
 import { format } from "date-fns";
 
+/**
+ * @name Columns
+ * @description Create The First Columns of table
+ * @returns {JSX.Element}
+ */
+
 export const COLUMNS = [
   {
     Header: "Id",

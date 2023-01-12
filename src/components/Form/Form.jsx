@@ -1,7 +1,7 @@
 /*eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addEmployee} from "../../features/newEmploye/newEmployeeSlice";
+import { addEmployee } from "../../features/newEmploye/newEmployeeSlice";
 import DatePicker from "react-datepicker";
 import { Modal } from "modal_rjmv";
 import moment from "moment";
@@ -27,7 +27,7 @@ const Form = () => {
 
   const initialValues = {
     firstname: "",
-    id:"",
+    id: "",
     lastname: "",
     datebirth: "",
     startdate: "",

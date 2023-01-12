@@ -1,4 +1,4 @@
-  <img src='./src/assets/image/logo.png'>  
+  <img src='../src/assets/image/logo.png'>  
   
 ## Projet 14 - Wealth Health - HRNet - OpenClassrooms
 

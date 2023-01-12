@@ -6,6 +6,7 @@ import ListeTable from "../../components/TableGroupe/ListeTable.jsx";
  * @returns {JSX.Element}
  */
 
+
 const list = () => {
   return (
     <main className="container center">

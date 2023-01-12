@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Bienvenue">Bienvenue</a></li><li><a href="global.html#Columns">Columns</a></li><li><a href="global.html#CreateEmployee">CreateEmployee</a></li><li><a href="global.html#EmployeeList">EmployeeList</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#Form">Form</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#RoutePath">RoutePath</a></li><li><a href="global.html#initialState">initialState</a></li><li><a href="global.html#listeTable">listeTable</a></li><li><a href="global.html#store">store</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article>  <img src='../src/assets/image/logo.png'>  
+<h2>Projet 14 - Wealth Health - HRNet - OpenClassrooms</h2>
+<p>Wealth Health is a a large financial company.This company uses an internal web application, called HRnet, which manages employee registration.</p>
+<h5>Project realized by Jean Marie Vianey RABEMANALINA</h5>
+<hr>
+<h3>Dependencies</h3>
+<ul>
+<li>React: (v 18.2.0)</li>
+<li>React-dom: (v 18.2.0)</li>
+<li>React-router-dom: (v 6.5.0)</li>
+<li>date-fns: (v 2.29.3)</li>
+<li>moment: (v 2.29.4)</li>
+<li>react-select: (v 5.7.0)</li>
+<li>react-table: (v 7.8.0)</li>
+<li>@reduxjs/toolkit: (v 1.9.1)</li>
+<li>react-datepicker: (v 4.8.0)</li>
+<li>react-redux: (v 8.0.5)</li>
+<li>redux: (v 4.2.0)</li>
+<li>modal_rjmv: (v 0.2.3)</li>
+</ul>
+<hr>
+<h3>I have used</h3>
+<p><img src="https://img.shields.io/static/v1?label=Language&amp;message=JS&amp;color=red&amp;style=for-the-badge&amp;logo=javascript" alt="Language - JS"> <img src="https://img.shields.io/static/v1?label=Framework&amp;message=React&amp;color=green&amp;style=for-the-badge&amp;logo=react" alt="Framework - React"> <img src="https://img.shields.io/static/v1?label=Code+Editor&amp;message=VS+Studio+Code&amp;color=yellow&amp;style=for-the-badge&amp;logo=Visual+Studio+Code" alt="Code Editor - VS Studio Code"> <img src="https://img.shields.io/static/v1?label=Node&amp;message=V16.15.0&amp;color=brown&amp;style=for-the-badge&amp;logo=Node" alt="Node - V18.12.1"> <img src="https://img.shields.io/static/v1?label=API+documentation&amp;message=JSDoc&amp;color=pink&amp;style=for-the-badge" alt="API documentation - JSDoc"></p>
+<hr>
+<h3>Project goal</h3>
+<ul>
+<li>Convert the entire HRNet JQuery project to React.</li>
+<li>Convert one of the four current JQuery plugins to React and publish it at npm or github.</li>
+<li>Perform Lighthouse test to compare the JQuery and React projects.</li>
+<li>Make a new version of the &quot;Create Employee&quot; and &quot;Employee List&quot; pages with React.</li>
+<li>Add a state management system (the JQuery project uses local storage)</li>
+<li>Make sure that everything is consistent in terms of style.</li>
+</ul>
+<hr>
+<h3>List of currently used jQuery plugins that need to be converted</h3>
+<ul>
+<li><a href="https://github.com/xdan/datetimepicker">datetimepicker</a></li>
+<li><a href="https://github.com/kylefox/jquery-modal">Modal window plugin - jQuery.modal.js</a></li>
+<li><a href="https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js">Drop-down menus</a></li>
+<li><a href="https://github.com/DataTables/DataTables">Plugin for data tables</a></li>
+</ul>
+<hr>
+<h3>Performance testing</h3>
+<p>To measure quantifiable data (e.g. page load times, network calls) to ensure that converting the app to React actually improves performance comparing to JQuery page, we will use <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.">Lighthouse</a> from Chrome.</p>
+<hr>
+<h3>My plugin React.</h3>
+<p>I have chosen the modal plugin. You can see all the instructions <a href="https://www.npmjs.com/package/modal_rjmv">here</a> to install my plugin.
+Here some examples of my modal.
+<img src='./src/assets/image/modalexamples.png'></p>
+<hr>
+<h3>How to work with Wealth Realth-HRNet React project</h3>
+<ul>
+<li>Clone this reposity:</li>
+</ul>
+<pre class="prettyprint source"><code>git clone https://github.com/vianey-jean/Jean_Rabemanalina_14_HRNet.git
+</code></pre>
+<ul>
+<li>Change the directory to:</li>
+</ul>
+<pre class="prettyprint source"><code>cd cd Jean_Rabemanalina_14_HRNet
+</code></pre>
+<ul>
+<li>Install dependencies:</li>
+</ul>
+<pre class="prettyprint source"><code>npm install
+</code></pre>
+<p>5 - Start the application:</p>
+<pre class="prettyprint source"><code>npm start
+</code></pre>
+<p>The application will be rendered at URL <code>http://localhost:3000</code></p>
+<hr>
+<h3>Build version of React project</h3>
+<p>To use Lighthouse with React project, you need to use the build version, otherwise the result of the performance will not be good.</p>
+<ul>
+<li>Create new terminal on VSCode.</li>
+</ul>
+<pre class="prettyprint source"><code>npm run build
+</code></pre>
+<p>This will create a folder called <strong>build</strong> inside the project. When the installation is finished, write this command in the terminal:</p>
+<pre class="prettyprint source"><code>serve -s build
+</code></pre>
+<p>You will see a message</p>
+<pre class="prettyprint source"><code>local http://localhost:3000
+On your Network: http://192.168.1.13:3000.
+</code></pre>
+<p>Left-click + ctrl key over localhost:3000 on the screen. It will open the project in a new browser window.</p>
+<p><em>If you have already open your project on localhost:3000, you will receive another address for your Local.</em></p></article>
+    </section>
+
+
+
+
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            index.jsx
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>root folder of the application</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.jsx.html">index.jsx</a>, <a href="index.jsx.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Jean Marie Vianey RABEMANALINA</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/vianey-jean/Jean_Rabemanalina_14_HRNet/" target="_blank"> Masters </a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+            
+                <div class="description usertext"><p>root folder of the application</p></div>
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Thu Jan 12 2023 15:38:42 GMT+0300 (heure normale de l’Arabie) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

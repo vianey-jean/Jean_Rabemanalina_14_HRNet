@@ -8,6 +8,7 @@ import "./page404.css";
  * @return {JSX.Element}
  */
 
+
 const NotFound = () => {
   const navigate = useNavigate();
 

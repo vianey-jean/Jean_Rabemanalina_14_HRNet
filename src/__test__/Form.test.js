@@ -24,8 +24,7 @@ describe('Should be display in create employee form',  () => {
             screen.getByLabelText('Start Date')
         ).toBeTruthy()
         expect(
-            screen.getByRole('spinbutton')
+            screen.getByRole('button')
         ).toBeTruthy()
     })
 })
-

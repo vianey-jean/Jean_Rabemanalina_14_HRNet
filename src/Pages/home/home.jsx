@@ -6,6 +6,7 @@ import "./home.css";
  * @returns {React.ReactElement} JSX.Element - Link to user page
  */
 
+
 const Home = () => {
   return (
     <main className="container center">
