@@ -9,4 +9,4 @@ describe('Footer', () => {
     const footer = screen.getByRole('contentinfo');
     expect(footer).toHaveTextContent('Copyright');
   });
-});
+}); 

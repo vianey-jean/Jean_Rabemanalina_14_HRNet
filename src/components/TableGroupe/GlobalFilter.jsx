@@ -12,9 +12,9 @@ export const GlobalFilter = ({ filter, setFilter }) => {
   const [value, setValue] = useState(filter);
 
   //to simulate internet connection
-  const onChange = useAsyncDebounce((value) => {
-    setFilter(value || undefined);
-  }, 100);
+  const onChange = useAsyncDebounce((value) =>
+    setFilter(value || undefined)
+  );
 
   return (
     <span>

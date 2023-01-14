@@ -58,8 +58,7 @@ const listeTable = () => {
     setGlobalFilter,
     prepareRow,
     // eslint-disable-next-line react-hooks/rules-of-hooks
-  } = useTable(
-    {
+  } = useTable({
       columns,
       data,
       defaultColumn,
