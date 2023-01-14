@@ -1,6 +1,6 @@
 {
   "name": "jean-rabemanalina-14-hrnet",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "author": "Jean marie Vianey RABEMANALINA",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "date-fns": "^2.29.3",
     "docdash": "^2.0.0",
+    "enzyme": "^3.11.0",
     "jsdoc": "^4.0.0",
     "modal_rjmv": "^0.3.0",
     "moment": "^2.29.4",

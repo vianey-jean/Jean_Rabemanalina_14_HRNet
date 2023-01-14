@@ -1,15 +1,19 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import ListeTable from "../components/TableGroupe/ListeTable";
+import GlobalFilter from "../components/TableGroupe/GlobalFilter";
 
 import { store } from "../redux/store";
 
-describe("Should be display the list form", () => {
-  test("it should have inputs", async () => {
+describe('GlobalFilter', () => {
+  it('Should display the input', async() => {
     render(
       <Provider store={store}>
-        <ListeTable />
+        <GlobalFilter />
       </Provider>
     );
+    const input = screen.getByLabelText('search')
+    expect(input).toBeInTheDocument()
+    expect(input.value).toBe('')
   });
 });
+  
