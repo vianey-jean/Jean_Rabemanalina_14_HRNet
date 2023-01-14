@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAsyncDebounce } from "react-table";
-
+import 'babel-polyfill';
 /**
  * @name GlobalFilter
  * @description create globaleFilter component to filter search on the table with informations about employee (id, first name, last name, date of birth, start date, street, city, state, zipcode and departament)
@@ -8,14 +8,15 @@ import { useAsyncDebounce } from "react-table";
  */
 
 
-export const GlobalFilter = ({ filter, setFilter }) => {
+const GlobalFilter = ({ filter, setFilter }) => {
   const [value, setValue] = useState(filter);
 
   //to simulate internet connection
-  const onChange = useAsyncDebounce(value =>{
-    setFilter(value || undefined)
+  const onChange = useAsyncDebounce(value => {
+    setFilter(value || undefined);
   }, 100);
 
+ 
   return (
     <span>
       <label htmlFor="search">Search: </label>
@@ -31,3 +32,6 @@ export const GlobalFilter = ({ filter, setFilter }) => {
     </span>
   );
 };
+
+export default GlobalFilter;
+

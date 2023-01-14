@@ -9,7 +9,7 @@ import {
 import { useSelector } from "react-redux";
 import { COLUMNS } from "./columns";
 import "./table.css";
-import { GlobalFilter } from "./GlobalFilter";
+import  GlobalFilter  from "./GlobalFilter";
 import versBas from "../../assets/image/versBas.png";
 import versHaut from "../../assets/image/vershaut.png";
 
