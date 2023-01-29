@@ -18,18 +18,19 @@ const setup = (path) =>
         <Route path="/list" element={<ListeEmployee />} />
         <Route path="*" element={<Page404 />} />
       </Routes>,
-    { initialEntries: [path] }
+     {initialEntries: [path] }
+   
   );
 
 describe('Routes', () => {
   it('Should display Create page', () => {
     setup('/');
     const main = screen.getByRole('main');
-    expect(main).toHaveTextContent('Create');
+    expect(main).toHaveTextContent('Bienvenue sur WealthHealth');
+  });
+  it('Should display Error404 page', () => {
+    setup('/*');
+    const main = screen.getByRole('main');
+    expect(main).toHaveTextContent('Quelque chose ne va pas ici!');
   });
 });
-
-
-
-
-

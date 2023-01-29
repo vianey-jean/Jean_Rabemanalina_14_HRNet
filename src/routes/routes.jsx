@@ -13,7 +13,7 @@ import Home from "../Pages/home/home"
  */
 
 
-function RoutePath() {
+function App() {
   return (
     <BrowserRouter>
       <Header />
@@ -29,4 +29,4 @@ function RoutePath() {
     </BrowserRouter>
   );
 }
-export default RoutePath;
+export default App;

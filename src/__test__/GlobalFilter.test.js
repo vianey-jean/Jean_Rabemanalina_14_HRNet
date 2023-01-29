@@ -9,8 +9,8 @@ describe('GlobalFilter', () => {
       <Provider store={store}>
         <GlobalFilter />
       </Provider>
-    ); 
-    const input = screen.getByLabelText('search')
+    );
+    const input = screen.getAllByLabelText('Search:')
     expect(input).toBeInTheDocument()
     expect(input.value).toBe('')
   });
