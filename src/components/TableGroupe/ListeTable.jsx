@@ -9,7 +9,7 @@ import {
 import { useSelector } from "react-redux";
 import { COLUMNS } from "./columns";
 import "./table.css";
-import  GlobalFilter  from "./GlobalFilter";
+import GlobalFilter from "./GlobalFilter";
 import versBas from "../../assets/image/versBas.png";
 import versHaut from "../../assets/image/vershaut.png";
 
@@ -30,7 +30,7 @@ const listeTable = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const columns = useMemo(() => COLUMNS, []);
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  
+
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const data = useMemo(() => Employees, [Employees]);
 
@@ -59,11 +59,11 @@ const listeTable = () => {
     prepareRow,
     // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useTable({
-      columns,
-      data,
-      defaultColumn,
-      initialState: { pageIndex: 0 },
-    },
+    columns,
+    data,
+    defaultColumn,
+    initialState: { pageIndex: 0 },
+  },
     useFilters,
     useGlobalFilter,
     useSortBy,

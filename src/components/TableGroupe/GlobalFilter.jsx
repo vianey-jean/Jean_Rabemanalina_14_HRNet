@@ -16,7 +16,7 @@ const GlobalFilter = ({ filter, setFilter }) => {
     setFilter(value || undefined);
   }, 100);
 
- 
+
   return (
     <span>
       <label htmlFor="search">Search: </label>
