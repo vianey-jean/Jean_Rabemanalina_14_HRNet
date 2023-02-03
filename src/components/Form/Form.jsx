@@ -208,7 +208,7 @@ const Form = () => {
           //your custom parameters here
           backgroundColor="white"
           colorModal="#dcf5ed"
-          iconModal="error"
+          iconModal="success"
           borderModal="20px"
           content="Employee created !"
           contentcolor=" #461632 "
