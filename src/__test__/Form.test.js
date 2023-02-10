@@ -13,7 +13,6 @@ describe("Should be display in create employee form", () => {
     );
 
     expect(screen.getAllByRole("textbox")).toBeTruthy();
-
     expect(screen.getByLabelText("Date of Birth")).toBeTruthy();
     expect(screen.getByLabelText("Start Date")).toBeTruthy();
     expect(screen.getByLabelText("City")).toBeTruthy();

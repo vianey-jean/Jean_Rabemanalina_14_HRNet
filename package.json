@@ -11,6 +11,7 @@
     "babel-polyfill": "^6.26.0",
     "date-fns": "^2.29.3",
     "docdash": "^2.0.1",
+    "enzyme": "^3.11.0",
     "jsdoc": "^4.0.0",
     "modal_rjmv": "^0.3.0",
     "moment": "^2.29.4",
