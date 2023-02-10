@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Bienvenue">Bienvenue</a></li><li><a href="global.html#Columns">Columns</a></li><li><a href="global.html#CreateEmployee">CreateEmployee</a></li><li><a href="global.html#EmployeeList">EmployeeList</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#Form">Form</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#RoutePath">RoutePath</a></li><li><a href="global.html#initialState">initialState</a></li><li><a href="global.html#listeTable">listeTable</a></li><li><a href="global.html#store">store</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Bienvenue">Bienvenue</a></li><li><a href="global.html#Columns">Columns</a></li><li><a href="global.html#CreateEmployee">CreateEmployee</a></li><li><a href="global.html#EmployeeList">EmployeeList</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#Form">Form</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#initialState">initialState</a></li><li><a href="global.html#listeTable">listeTable</a></li><li><a href="global.html#store">store</a></li></ul>
     
 </nav>
 
@@ -67,57 +67,69 @@ import { listesDepartement } from "../../Moks/departements";
 
 
 const Form = () => {
-  //to get the size of the total employee inside array
-  const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
+    // Import the total employee count from the global state
+    const totalEmployee = useSelector((state) => state.newEmployee.arrayEmployee);
 
-  const dispatch = useDispatch();
+    // Import the dispatch function for Redux
+    const dispatch = useDispatch();
+  
+    // Set the initial form values
+    const initialValues = {
+      firstname: "",
+      id: "",
+      lastname: "",
+      datebirth: "",
+      startdate: "",
+      street: "",
+      city: "",
+      countrystate: "",
+      zipcode: "",
+      departament: "",
+    };
+  
+    // State to store the form values
+    const [formValues, setFormValues] = useState(initialValues);
+  
+    // State to store the form error messages
+    const [formErrors, setFormErrors] = useState({});
+  
+    // State to determine if the form has been submitted
+    const [isSubmit, setIsSubmit] = useState(false);
+  
+    // State to manage the display of the modal
+    const [showModal, setShowModal] = useState(false);
+  
+    // Function to toggle the modal
+    const openModal = () => {
+      setShowModal((prev) => !prev);
+    };
+  
+    // State to store the selected country state
+    const [selectedOptionsState, setSelectedOptionsState] = useState();
+  
+    // State to store the selected birth date
+    const [selectedDate, setSelectedDate] = useState(null);
+  
+    // State to store the selected start work date
+    const [selectedDateStart, setSelectedDateStart] = useState(null);
+  
+    // State to store the selected departament
+    const [selectedOptions, setSelectedOptions] = useState();
+  
+    // Function to format the birth date and store it in the form values
+    const ageDate = (data) => {
+      setSelectedDate(data);
+      const dateValue = moment(data).format("YYYY/MM/DD");
+      setFormValues({
+        ...formValues,
+        [(formValues.datebirth = "datebirth")]: (formValues.datebirth =
+          dateValue),
+      });
+      formErrors.datebirth = "";
+    };
 
-  const initialValues = {
-    firstname: "",
-    id: "",
-    lastname: "",
-    datebirth: "",
-    startdate: "",
-    street: "",
-    city: "",
-    countrystate: "",
-    zipcode: "",
-    departament: "",
-  };
-
-  //form values, error messages and if is submit or not
-  const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
-
-  //Modal
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal((prev) => !prev);
-  };
-
-  // React state to manage selected options country state
-  const [selectedOptionsState, setSelectedOptionsState] = useState();
-
-  //birth date
-  const [selectedDate, setSelectedDate] = useState(null);
-  //start work date
-  const [selectedDateStart, setSelectedDateStart] = useState(null);
-
-  // React state to manage selected options departament
-  const [selectedOptions, setSelectedOptions] = useState();
-
-  const ageDate = (data) => {
-    setSelectedDate(data);
-    const dateValue = moment(data).format("YYYY/MM/DD");
-    setFormValues({
-      ...formValues,
-      [(formValues.datebirth = "datebirth")]: (formValues.datebirth =
-        dateValue),
-    });
-    formErrors.datebirth = "";
-  };
-
+    // Function to format the start work date and store it in the form values
+    
   const startDate = (data) => {
     setSelectedDateStart(data);
     const dateValueStart = moment(data).format("YYYY/MM/DD");
@@ -421,7 +433,7 @@ export default Form;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Thu Jan 26 2023 02:03:33 GMT+0300 (heure normale de l’Arabie) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Fri Feb 10 2023 19:27:36 GMT+0400 (heure normale de Maurice) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
