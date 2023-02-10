@@ -206,7 +206,7 @@ const Form = () => {
           showModal={showModal}
           setShowModal={setShowModal}
           //your custom parameters here
-          backgroundColor="white"
+          backgroundColor="#FFFFFF80"
           colorModal="#dcf5ed"
           iconModal="success"
           borderModal="20px"
